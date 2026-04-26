@@ -3,5 +3,14 @@
   "obsidian-git",
   "templater-obsidian",
   "obsidian-frontmatter-tag-suggest",
-  "better-word-count"
+  "better-word-count",
+  "obsidian42-brat",
+  "vault-cms",
+  "editing-toolbar",
+  "iconic",
+  "obsidian-kanban",
+  "obsidian-importer",
+  "obsidian-advanced-slides",
+  "obsidian-local-rest-api",
+  "astro-composer"
 ]

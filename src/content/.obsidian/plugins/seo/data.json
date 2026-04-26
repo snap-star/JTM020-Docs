@@ -1,0 +1,6 @@
+{
+  "scanDirectories": "posts,spec,.",
+  "titleProperty": "title",
+  "descriptionProperty": "description",
+  "enableMDXSupport": true
+}

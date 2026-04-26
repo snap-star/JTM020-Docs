@@ -1,0 +1,13 @@
+{
+  "tabBarCommands": [
+    {
+      "id": "editing-toolbar:hide-show-menu",
+      "icon": "lucide-panel-top-open",
+      "name": "Toggle editing toolbar",
+      "displayName": "Editing Toolbar: Hide/Show ",
+      "mode": "desktop",
+      "toggleIcon": "lucide-panel-top-close",
+      "showOnFileTypes": "md,mdx"
+    }
+  ]
+}

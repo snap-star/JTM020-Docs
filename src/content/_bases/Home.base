@@ -1,0 +1,93 @@
+filters:
+  or:
+    - file.ext == "md"
+    - file.ext == "mdx"
+
+properties:
+  file.fullname:
+    displayName: Full File Name
+  file.name:
+    displayName: Name
+  note.date:
+    displayName: Date
+  note.description:
+    displayName: Description
+  note.draft:
+    displayName: Draft
+  note.image:
+    displayName: Image
+  note.pubDate:
+    displayName: PubDate
+  note.tags:
+    displayName: Tags
+  note.title:
+    displayName: Title
+  note.updated:
+    displayName: Updated
+
+views:
+  - type: cms
+    name: "Posts"
+    filters:
+      and:
+        - file.folder.startsWith("posts")
+    sort:
+      - property: note.updated
+        direction: DESC
+    imageFormat: "cover"
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: "posts"
+    fallbackToEmbeds: "if-empty"
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: "above"
+    titleProperty: note.title
+    dateProperty: note.updated
+    descriptionProperty: note.description
+    imageProperty: note.image
+    showTags: true
+    tagsProperty: note.tags
+    showDraftStatus: true
+    draftStatusProperty: note.draft
+    draftStatusReverse: false
+  - type: cms
+    name: "Spec"
+    filters:
+      and:
+        - file.folder.startsWith("spec")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: "cover"
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: "spec"
+    fallbackToEmbeds: "if-empty"
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: "above"
+    titleProperty: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
+  - type: cms
+    name: ""
+    filters:
+      and:
+        - file.folder == "/"
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: "cover"
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: "."
+    fallbackToEmbeds: "if-empty"
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: "above"
+    titleProperty: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false

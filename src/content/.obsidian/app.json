@@ -7,12 +7,13 @@
   "useMarkdownLinks": false,
   "newFileLocation": "folder",
   "newFileFolderPath": "posts",
-  "attachmentFolderPath": "assets",
+  "attachmentFolderPath": "./attachments",
   "showLineNumber": true,
   "strictLineBreaks": false,
   "foldHeading": true,
   "foldIndent": true,
   "showFrontmatter": true,
   "readableLineLength": true,
-  "spellcheck": true
+  "spellcheck": true,
+  "newLinkFormat": "relative"
 }

@@ -1,0 +1,150 @@
+{
+  "projectRoot": "../..",
+  "configFilePath": "../config.ts",
+  "contentTypes": [
+    {
+      "id": "content-type-1777217957566-9yf0u2noz",
+      "name": "Posts",
+      "folder": "posts",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777217957566-txjbrm9ds",
+      "name": "Spec",
+      "folder": "spec",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777218496172-qhh55qk8f",
+      "name": "",
+      "folder": "",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    }
+  ],
+  "frontmatterProperties": {
+    "content-type-1777217957566-9yf0u2noz": {
+      "titleProperty": "title",
+      "dateProperty": "updated",
+      "descriptionProperty": "description",
+      "tagsProperty": "tags",
+      "draftProperty": "draft",
+      "draftLogic": "true-draft",
+      "hasDraftStatus": true,
+      "imageProperty": "image",
+      "template": "---\ntitle: \"{{title}}\"\nupdated: {{date}}\npublished: \"\"\ndescription: \"\"\nimage: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n"
+    },
+    "content-type-1777217957566-txjbrm9ds": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1777218496172-qhh55qk8f": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    }
+  },
+  "attachmentHandlingMode": "subfolder",
+  "preset": "vanilla",
+  "presetName": "",
+  "presetsRepo": "davidvkimball/vaultcms-presets",
+  "enableEditingToolbar": true,
+  "enableExtendedFileTypes": true,
+  "enabledPlugins": [
+    "data-files-editor"
+  ],
+  "disabledPlugins": [],
+  "theme": "",
+  "basesCMSConfig": {
+    "views": []
+  },
+  "astroComposerConfig": {
+    "customContentTypes": [
+      {
+        "id": "content-type-1777217957566-9yf0u2noz",
+        "name": "Posts",
+        "folder": "posts",
+        "template": "---\ntitle: \"{{title}}\"\nupdated: {{date}}\npublished: \"\"\ndescription: \"\"\nimage: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n",
+        "enabled": true,
+        "linkBasePath": "/posts/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777217957566-txjbrm9ds",
+        "name": "Spec",
+        "folder": "spec",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/spec/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777218496172-qhh55qk8f",
+        "name": "",
+        "folder": ".",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "//",
+        "creationMode": "file",
+        "indexFileName": "index"
+      }
+    ],
+    "defaultTemplate": "",
+    "configFilePath": "../config.ts",
+    "terminalProjectRootPath": "../..",
+    "showMdxFilesInExplorer": true
+  },
+  "seoConfig": {
+    "titleProperty": "title",
+    "descriptionProperty": "description",
+    "scanDirectories": "posts,spec,.",
+    "useFilenameAsTitle": false,
+    "useFilenameAsSlug": true,
+    "enableMDXSupport": true
+  },
+  "propertyOverFileName": {
+    "propertyKey": "title",
+    "enableMdxSupport": true
+  },
+  "imageManager": {
+    "defaultPropertyName": "image",
+    "banner": {
+      "properties": {
+        "imageProperty": "image"
+      }
+    }
+  },
+  "homeBase": {
+    "homeBaseType": "File",
+    "homeBaseValue": "_bases/Home.base"
+  },
+  "explorerFocus": {
+    "showRightClickMenu": true,
+    "showFileExplorerIcon": true,
+    "focusLevel": "parent",
+    "hideAncestorFolders": false
+  },
+  "ignoreConfig": {
+    "gitIgnoreConfigured": true,
+    "viteIgnoreConfigured": true
+  },
+  "gitConfig": {
+    "enabled": false,
+    "isPrivate": true,
+    "branchName": "main",
+    "autoConfigureObsidianGit": true,
+    "repoName": "JTM020-Docs"
+  },
+  "deploymentPlatform": "",
+  "resolvePublicImages": false,
+  "runWizardOnStartup": false,
+  "wizardCompleted": true,
+  "enableMdxSupport": true,
+  "defaultContentTypeId": "content-type-1777217957566-9yf0u2noz"
+}
