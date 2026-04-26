@@ -39,7 +39,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/snap-star",
+			url: "https://github.com/snap-star/JTM020-Docs",
 			external: true,
 		},
 	],
@@ -47,13 +47,13 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "JTM020",
+	name: "JTM020 Docs",
 	bio: "Technical documentation and project knowledge base. Managed via Obsidian + VaultCMS.",
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/snap-star",
+			url: "https://github.com/snap-star/JTM020-Docs",
 		},
 	],
 };
