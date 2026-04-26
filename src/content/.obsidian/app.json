@@ -1,0 +1,18 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "defaultViewMode": "source",
+  "vimMode": false,
+  "promptDelete": false,
+  "useMarkdownLinks": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "posts",
+  "attachmentFolderPath": "assets",
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showFrontmatter": true,
+  "readableLineLength": true,
+  "spellcheck": true
+}

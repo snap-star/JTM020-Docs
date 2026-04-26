@@ -1,0 +1,14 @@
+{
+  "obsidian-vault-cms:open-setup-wizard": [
+    { "modifiers": ["Ctrl", "Shift"], "key": "W" }
+  ],
+  "obsidian-vault-cms:new-post": [
+    { "modifiers": ["Ctrl", "Shift"], "key": "N" }
+  ],
+  "obsidian-vault-cms:open-home": [
+    { "modifiers": ["Ctrl", "Shift"], "key": "H" }
+  ],
+  "editor:toggle-preview": [
+    { "modifiers": ["Ctrl"], "key": "E" }
+  ]
+}

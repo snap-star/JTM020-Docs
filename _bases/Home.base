@@ -1,0 +1,57 @@
+---
+title: JTM020-Docs CMS Dashboard
+---
+
+# 📚 JTM020-Docs — Content Dashboard
+
+> Manage your documentation from Obsidian. All posts in `posts/` are listed below.
+
+## 📝 All Documents
+
+```dataview
+TABLE
+  title AS "Title",
+  category AS "Category",
+  tags AS "Tags",
+  published AS "Published",
+  draft AS "Draft?"
+FROM "posts"
+SORT published DESC
+```
+
+## 🚧 Drafts (Not Yet Published)
+
+```dataview
+TABLE
+  title AS "Title",
+  category AS "Category",
+  published AS "Date"
+FROM "posts"
+WHERE draft = true
+SORT published DESC
+```
+
+## ✅ Published
+
+```dataview
+TABLE
+  title AS "Title",
+  category AS "Category",
+  published AS "Published"
+FROM "posts"
+WHERE draft != true
+SORT published DESC
+```
+
+---
+
+### Quick Actions
+
+- **New doc:** `Ctrl+Shift+N` or Command Palette → `Vault CMS: New post`
+- **Open this dashboard:** `Ctrl+Shift+H`
+- **Git sync:** Command Palette → `Obsidian Git: Commit and push`
+- **Preview site:** Run `pnpm dev` in your terminal from the project root
+
+---
+
+*Powered by [VaultCMS](https://vaultcms.org) + [Obsidian](https://obsidian.md) + [Astro Fuwari](https://github.com/saicaca/fuwari)*

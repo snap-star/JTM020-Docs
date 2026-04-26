@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-vault-cms",
+  "name": "Vault CMS",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Use Obsidian as a CMS for your Astro website. Auto-detects content types, frontmatter, and folder structure.",
+  "author": "davidvkimball",
+  "authorUrl": "https://github.com/davidvkimball/obsidian-vault-cms",
+  "isDesktopOnly": false
+}
