@@ -1,10 +1,10 @@
 {
-  "defaultTemplate": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ntags: []\n---\n",
+  "defaultTemplate": "---\ntitle: \"{{title}}\"\nupdated: {{date}}\npublished: \"\"\ndescription: \"\"\nimage: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n",
   "autoInsertProperties": true,
   "dateFormat": "YYYY-MM-DD",
   "enableCopyHeadingLink": true,
-  "copyHeadingLinkFormat": "obsidian",
-  "addTrailingSlashToLinks": false,
+  "copyHeadingLinkFormat": "astro",
+  "addTrailingSlashToLinks": true,
   "enableOpenTerminalCommand": true,
   "terminalProjectRootPath": "../..",
   "terminalApplicationName": "",
@@ -27,18 +27,6 @@
       "enableUnderscorePrefix": false
     },
     {
-      "id": "content-type-1777217957566-txjbrm9ds",
-      "name": "Spec",
-      "folder": "spec",
-      "linkBasePath": "/spec/",
-      "template": "---\n---\n",
-      "enabled": true,
-      "creationMode": "file",
-      "indexFileName": "index",
-      "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
-    },
-    {
       "id": "content-type-1777218496172-qhh55qk8f",
       "name": "",
       "folder": ".",
@@ -48,53 +36,35 @@
       "creationMode": "file",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": true
+    },
+    {
+      "id": "content-type-1777217957566-txjbrm9ds",
+      "name": "Spec",
+      "folder": "spec",
+      "linkBasePath": "/spec/",
+      "template": "---\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": true
     }
   ],
   "migrationCompleted": true,
   "helpButtonReplacement": {
-    "enabled": false,
-    "commandId": "edit-astro-config",
+    "enabled": true,
+    "commandId": "astro-composer:edit-astro-config",
     "iconId": "rocket"
   },
   "showMdxFilesInExplorer": true,
   "processBackgroundFileChanges": true,
-  "syncDraftDate": false,
+  "syncDraftDate": true,
   "draftDetectionMode": "property",
-  "draftProperty": "",
+  "draftProperty": "draft",
   "draftLogic": "true-is-draft",
-  "publishDateField": "",
+  "publishDateField": "updated",
   "renameOnTitleClick": false,
-  "customContentTypes": [
-    {
-      "id": "content-type-1777217957566-9yf0u2noz",
-      "name": "Posts",
-      "folder": "posts",
-      "template": "---\ntitle: \"{{title}}\"\nupdated: {{date}}\npublished: \"\"\ndescription: \"\"\nimage: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n",
-      "enabled": true,
-      "linkBasePath": "/posts/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1777217957566-txjbrm9ds",
-      "name": "Spec",
-      "folder": "spec",
-      "template": "---\n---\n",
-      "enabled": true,
-      "linkBasePath": "/spec/",
-      "creationMode": "file",
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1777218496172-qhh55qk8f",
-      "name": "",
-      "folder": ".",
-      "template": "---\n---\n",
-      "enabled": true,
-      "linkBasePath": "//",
-      "creationMode": "file",
-      "indexFileName": "index"
-    }
-  ]
+  "updateModifiedDate": false,
+  "modifiedDateField": ""
 }

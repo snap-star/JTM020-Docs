@@ -3,6 +3,14 @@
   "configFilePath": "../config.ts",
   "contentTypes": [
     {
+      "id": "content-type-1777218496172-qhh55qk8f",
+      "name": "",
+      "folder": "",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
       "id": "content-type-1777217957566-9yf0u2noz",
       "name": "Posts",
       "folder": "posts",
@@ -14,14 +22,6 @@
       "id": "content-type-1777217957566-txjbrm9ds",
       "name": "Spec",
       "folder": "spec",
-      "fileOrganization": "file",
-      "enabled": true,
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1777218496172-qhh55qk8f",
-      "name": "",
-      "folder": "",
       "fileOrganization": "file",
       "enabled": true,
       "indexFileName": "index"
@@ -40,12 +40,18 @@
       "template": "---\ntitle: \"{{title}}\"\nupdated: {{date}}\npublished: \"\"\ndescription: \"\"\nimage: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n"
     },
     "content-type-1777217957566-txjbrm9ds": {
-      "hasDraftStatus": false,
-      "template": "---\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\n---\n",
+      "tagsProperty": "tags",
+      "descriptionProperty": "description",
+      "imageProperty": "image"
     },
     "content-type-1777218496172-qhh55qk8f": {
-      "hasDraftStatus": false,
-      "template": "---\n---\n"
+      "hasDraftStatus": true,
+      "template": "---\n---\n",
+      "descriptionProperty": "description",
+      "tagsProperty": "tags",
+      "imageProperty": "image"
     }
   },
   "attachmentHandlingMode": "subfolder",
@@ -55,7 +61,21 @@
   "enableEditingToolbar": true,
   "enableExtendedFileTypes": true,
   "enabledPlugins": [
-    "data-files-editor"
+    "data-files-editor",
+    "astro-composer",
+    "bases-cms",
+    "editing-toolbar",
+    "home-base",
+    "image-manager",
+    "property-over-file-name",
+    "seo",
+    "ui-tweaker",
+    "explorer-focus",
+    "file-name-history",
+    "omnisearch",
+    "settings-search",
+    "tag-wrangler",
+    "zenmode"
   ],
   "disabledPlugins": [],
   "theme": "",
@@ -75,16 +95,6 @@
         "indexFileName": "index"
       },
       {
-        "id": "content-type-1777217957566-txjbrm9ds",
-        "name": "Spec",
-        "folder": "spec",
-        "template": "---\n---\n",
-        "enabled": true,
-        "linkBasePath": "/spec/",
-        "creationMode": "file",
-        "indexFileName": "index"
-      },
-      {
         "id": "content-type-1777218496172-qhh55qk8f",
         "name": "",
         "folder": ".",
@@ -93,12 +103,30 @@
         "linkBasePath": "//",
         "creationMode": "file",
         "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777217957566-txjbrm9ds",
+        "name": "Spec",
+        "folder": "spec",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/spec/",
+        "creationMode": "file",
+        "indexFileName": "index"
       }
     ],
-    "defaultTemplate": "",
+    "defaultTemplate": "---\ntitle: \"{{title}}\"\nupdated: {{date}}\npublished: \"\"\ndescription: \"\"\nimage: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n",
     "configFilePath": "../config.ts",
     "terminalProjectRootPath": "../..",
-    "showMdxFilesInExplorer": true
+    "showMdxFilesInExplorer": true,
+    "postsFolder": "posts",
+    "postsCreationMode": "file",
+    "postsIndexFileName": "index",
+    "syncDraftDate": true,
+    "draftDetectionMode": "property",
+    "draftProperty": "draft",
+    "draftLogic": "true-is-draft",
+    "publishDateField": "updated"
   },
   "seoConfig": {
     "titleProperty": "title",

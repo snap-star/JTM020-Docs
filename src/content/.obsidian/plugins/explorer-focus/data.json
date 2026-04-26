@@ -2,5 +2,10 @@
   "showRightClickMenu": true,
   "showFileExplorerIcon": true,
   "focusLevel": "parent",
-  "hideAncestorFolders": false
+  "customFolderPath": "src/content",
+  "hideAncestorFolders": false,
+  "autoHidePaths": [
+    "node_modules",
+    "dist"
+  ]
 }

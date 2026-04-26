@@ -56,12 +56,12 @@ pnpm dev
 
 ### Via Obsidian (Recommended)
 
-| Shortcut | Action |
-|---|---|
-| `Ctrl+Shift+N` | Create new documentation post |
-| `Ctrl+Shift+H` | Open CMS dashboard |
-| `Ctrl+E` | Toggle editor/preview |
-| `Ctrl+P` → `Git: Commit and push` | Publish your changes |
+| Shortcut                               | Action                        |
+| -------------------------------------- | ----------------------------- |
+| `Ctrl+Shift+N`                       | Create new documentation post |
+| `Ctrl+Shift+H`                       | Open CMS dashboard            |
+| `Ctrl+E`                             | Toggle editor/preview         |
+| `Ctrl+P` → `Git: Commit and push` | Publish your changes          |
 
 ### Via CLI
 
@@ -131,6 +131,7 @@ export const siteConfig: SiteConfig = {
 Push to `main` → auto-deploys via GitHub Actions.
 
 **First-time setup:**
+
 1. Go to **Settings → Pages**
 2. Set Source to **GitHub Actions**
 3. Push any commit to trigger deployment
