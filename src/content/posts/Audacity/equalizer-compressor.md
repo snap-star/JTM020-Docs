@@ -69,7 +69,7 @@ Use Audacity's compressor for **broad dynamic control**, then use TDR Nova for *
 | **Release**   | 80-150 ms     |
 > **Pro Tip**: For the drum bus, try Audacity's **"Beefy Master"** preset as a starting point, then adjust threshold to taste [audacity manual](https://manual.audacityteam.org/man/compressor.html).
 
-## **3. BASS** 🎸
+## **3. BASS**
 
 **Goal**: Tight, solid, controlled low-end
 
@@ -86,7 +86,7 @@ Use Audacity's compressor for **broad dynamic control**, then use TDR Nova for *
 **Important**: Bass compression is about **consistency**, not loudness. If you hear pumping, raise the threshold or lengthen the release.
 :::
 
-## **4. GUITARS** 🎸
+## **4. GUITARS** 
 
 **Goal**: Even strumming, controlled dynamics
 **Rhythm Guitars (Clean/Indie):**
@@ -108,7 +108,7 @@ Use Audacity's compressor for **broad dynamic control**, then use TDR Nova for *
 | **Attack**    | 2-5 ms       |
 | **Release**   | 40-80 ms     |
 
-## **5. SYNTH & KEYBOARD** 🎹
+## **5. SYNTH & KEYBOARD** 
 
 **Goal**: Controlled but expressive
 **Synth Pads:**
@@ -152,7 +152,7 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 
 ## **Instrument-by-Instrument TDR Nova Settings**
 
-#### **1. VOCALS** 🎤
+## **1. VOCALS** 
 
 **Start with these bands:**
 
@@ -168,8 +168,8 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 - **Band 1 (Mud)**: Threshold -20 dB, Ratio 2:1, Attack 10ms, Release 100ms
 - **Band 3 (Sibilance)**: Threshold -18 dB, Ratio 3:1, Attack 5ms, Release 50ms
 
-:::note
-**Why dynamic?** The mud and harshness only get tamed when the singer gets loud on those specific notes. During quiet passages, the full tone remains natural.
+:::note[Why Dynamic?]
+The mud and harshness only get tamed when the singer gets loud on those specific notes. During quiet passages, the full tone remains natural.
 :::
 
 ## **2. DRUMS** 
@@ -183,7 +183,7 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 | **Band 2**    | Bell      | 300-400 Hz | -3 to -5 dB | **ON** (boxiness control) |
 | **Band 3**    | Bell      | 2-4 kHz    | +2 to +4 dB | Off (beater click)        |
 | **Band 4**    | Low-pass  | 10-12 kHz  | —           | Off                       |
-:::note
+:::note[Dynamic on Band 2:]
 **Dynamic on Band 2**: Threshold -22 dB, Ratio 2:1 — only cuts the boxiness when it gets excessive.
 :::
 
@@ -196,10 +196,13 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 | **Band 3** | Bell       | 3-5 kHz      | +3 to +5 dB | Off (crack)           |
 | **Band 4** | High-shelf | 8-10 kHz     | +2 dB       | Off (brightness)      |
 
-**Drum Bus (All Drums Together):** Use TDR Nova as a **multiband compressor**:
+:::note[Drum Bus]
+**Drum Bus (All Drums Together):** 
+Use TDR Nova as a **multiband compressor**:
 - Load preset **"4 Band Dyn"**
 - Adjust thresholds so each band barely moves on the loudest hits
 - This glues the kit together while preserving punch
+:::
 
 ## **3. BASS** 
 
@@ -211,11 +214,11 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 | **Band 3**    | Bell       | 800 Hz-1.2 kHz | +2 to +3 dB | Off (definition)           |
 | **Band 4**    | High-shelf | 4-6 kHz        | +3 to +5 dB | Off (string noise/clarity) |
 
-:::note
+:::note[Dynamic on Band 2:]
 **Dynamic on Band 2**: Threshold -20 dB, Ratio 2:1 — only cuts when the low-mids get too thick.
 :::
 
-## **4. GUITARS** 🎸
+## **4. GUITARS** 
 
 **Rhythm Guitars (Indie Jangle):**
 
@@ -235,7 +238,7 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 | **Band 2** | Bell | 2-3 kHz    | +2 to +4 dB | Off (cut through)       |
 | **Band 3** | Bell | 4-6 kHz    | -2 to -3 dB | **ON** (tame harshness) |
 
-## **5. SYNTH & KEYBOARD** 🎹
+## **5. SYNTH & KEYBOARD** 
 
 **Synth Pads:**
 
@@ -258,7 +261,7 @@ TDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.ne
 
 Here's the recommended signal chain for each track:
 
-:::important
+:::important[Recomended:]
 1. Audacity Compressor (broad dynamic control)
 2. TDR Nova (surgical EQ and dynamic EQ)
 3. Panagement 2 (stereo width and reverb)
@@ -287,18 +290,18 @@ Instead of buying a de-esser, use TDR Nova Band 3 at 5-8 kHz with:
 - Release: 50ms
 
 This only cuts the "sss" and "shh" sounds when they happe
-### **3. Drum Bus "Crispiness"*
+### **3. Drum Bus "Crispiness"**
 Load the **"LF Density"** preset on your drum bus. It dynamically boosts low-end when the kick hits and controls the overall density.
 
 ### **4. Parallel Compression with TDR Nova**
 Set the **Dry Mix** knob to 50-70%. This blends the compressed signal with the original, giving you the punch of compression while retaining transients. Perfect for drums.
 
 
-## **AUDACITY COMPRESSOR: Stem-by-Stem Settings**
+# **AUDACITY COMPRESSOR: Stem-by-Stem Settings**
 
 Audacity's compressor is a straightforward **downward compressor**—it reduces peaks so you can turn everything up. The key is using different **attack/release times** for each instrument to shape the transients[audacity manual](https://manual.audacityteam.org/man/compressor.html)
 
-### **1. DRUMS** 🥁
+### **1. DRUMS**
 
 **Goal**: Punchy, controlled, but not lifeless
 
@@ -316,7 +319,7 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 **Pro Tip**: If the kick and snare feel "squashed," increase attack to 8-10 ms. For more "room sound," slow release to 100-150 ms.
 :::
 
-### **2. BASS** 🎸
+### **2. BASS** 
 **Goal**: Tight, consistent low-end that sits in the pocket
 
 | Parameter        | Setting       | Why                                               |
@@ -335,7 +338,7 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 **Pro Tip**: If you hear the bass "breathing" (pumping), increase release to 200+ ms. For synth bass, use a faster attack (5-8 ms) to control the sub-bass boom.
 :::
 
-### **3. GUITAR** 🎸
+### **3. GUITAR** 
 
 **Goal**: Even strums, controlled dynamics, maintain "air"
 
@@ -353,7 +356,7 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 **Pro Tip**: For clean/ambient guitars, use a slower attack (15 ms) and higher ratio (4:1) to create a "swelling" effect. For distorted guitars, compression is often unnecessary—Suno's AI usually compresses them already.
 :::
 
-### **4. SYNTH/KEYBOARD** 🎹
+### **4. SYNTH/KEYBOARD** 
 
 **Goal**: Controlled pads, punchy leads, no muddiness
 
@@ -371,7 +374,7 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 **Pro Tip**: For arpeggiated synths, use a fast attack (2-3 ms) and medium release (50 ms) to even out the "machine gun" effect. For pads, slow attack (20 ms) lets the swell come through.
 :::
 
-### **5. VOCAL (Lead)** 🎤
+### **5. VOCAL (Lead)** 
 
 **Goal**: Intimate, upfront, every word audible
 
@@ -389,7 +392,7 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 **Pro Tip**: Suno vocals can sound "flat" dynamically. Use **2-stage compression**: light compression here (3:1), then TDR Nova for dynamic EQ control (see below). If the vocal sounds "squashed," raise threshold to -16 dB and lower ratio to 2.5:1.
 :::
 
-### **6. BACKING VOCALS** 🎤🎤
+### **6. BACKING VOCALS** 
 **Goal**: Blend with lead, add width without competing
 
 | Parameter        | Setting       | Why                                         |
@@ -400,7 +403,7 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 | **Release**      | 80-150 ms     | Slightly longer for blend                   |
 | **Make-up Gain** | +3 to +5 dB   | Level to sit under lead                     |
 
-### **7. OTHERS/PERCUSSION** 🪘
+### **7. OTHERS/PERCUSSION** 
 **Goal**: Tame sharp transients, add glue
 
 | Parameter        | Setting       | Why                                   |
@@ -412,16 +415,16 @@ Audacity's compressor is a straightforward **downward compressor**—it reduces 
 | **Make-up Gain** | +2 to +4 dB   | Subtle                                |
 
 
-## **TDR NOVA: Dynamic EQ Strategies**
+# **TDR NOVA: Dynamic EQ Strategies**
 
 TDR Nova is a **parallel dynamic equalizer**—it can act as a standard EQ, dynamic EQ, multiband compressor, or wideband compressor. For Suno stems, we'll use it to fix AI artifacts and add polish.
 
-### **Key Concept: Dynamic vs Static EQ**
+## **Key Concept: Dynamic vs Static EQ**
 
 - **Static EQ**: Always cuts/boosts (like a normal EQ)
 - **Dynamic EQ**: Only cuts/boosts when the frequency gets loud (like a smart compressor)
 
-### **1. VOCAL (Lead) — "Air & Clarity" Setup** 🎤
+### **1. VOCAL (Lead) — "Air & Clarity" Setup** 
 
 Suno vocals often sound slightly muffled or have harsh "AI sibilance." Use TDR Nova to add air dynamically.
 **Band Setup** (4 dynamic bands + HP/LP):
@@ -447,7 +450,7 @@ Suno vocals often sound slightly muffled or have harsh "AI sibilance." Use TDR N
 **Pro Tip**: Set the spectrum analyzer to **"Out"** to see what the EQ is actually doing after dynamic processing.
 :::
 
-### **2. BASS — "Tight Low-End" Setup** 🎸
+### **2. BASS — "Tight Low-End" Setup** 
 
 Suno bass can be boomy or lack definition.
 
@@ -466,7 +469,7 @@ Suno bass can be boomy or lack definition.
 - **250 Hz dynamic cut**: Removes "mud" only when the bass gets loud—keeps it clear in the mix
 - **800 Hz boost**: Adds "string noise" and definition for indie rock clarity
 
-### **3. DRUMS — "Punch & Crack" Setup** 🥁
+### **3. DRUMS — "Punch & Crack" Setup** 
 
 | Band          | Type       | Freq   | Q        | Gain        | Dynamic | Threshold | Ratio |
 | ------------- | ---------- | ------ | -------- | ----------- | ------- | --------- | ----- |
@@ -482,7 +485,7 @@ Suno bass can be boomy or lack definition.
 - **400 Hz dynamic cut**: Removes "boxiness" from snare/tom rings only when loud
 - **3 kHz dynamic boost**: Adds "crack" to snare and "stick" to cymbals only when they hit—prevents harshness during quiet passages
 
-### **4. GUITAR — "Shimmer & Body" Setup** 🎸
+### **4. GUITAR — "Shimmer & Body" Setup** 
 
 | Band          | Type       | Freq    | Q        | Gain        | Dynamic | Threshold | Ratio |
 | ------------- | ---------- | ------- | -------- | ----------- | ------- | --------- | ----- |
@@ -497,7 +500,7 @@ Suno bass can be boomy or lack definition.
 - **2.5 kHz**: Adds "bite" and presence for indie rock
 - **8 kHz dynamic shelf**: Adds shimmer/air only when the guitar is playing—prevents hiss during stops
 
-### **5. SYNTH/PAD — "Space & Definition" Setup** 🎹
+### **5. SYNTH/PAD — "Space & Definition" Setup** 
 
 | Band          | Type       | Freq   | Q        | Gain  | Dynamic | Threshold | Ratio |
 | ------------- | ---------- | ------ | -------- | ----- | ------- | --------- | ----- |
@@ -511,7 +514,7 @@ Suno bass can be boomy or lack definition.
 - **300 Hz dynamic cut**: Removes "mud" from chord pads when they get loud
 - **12 kHz dynamic shelf**: Adds "air" and sparkle that moves with the music—creates an evolving texture
 
-### **6. MASTER BUS — "Glue & Polish" Setup** 🎛️
+### **6. MASTER BUS — "Glue & Polish" Setup** 
 
 Use TDR Nova on your **master track** (after all individual processing) to glue the Suno stems together.
 
@@ -521,18 +524,20 @@ Use TDR Nova on your **master track** (after all individual processing) to glue 
 | **Band 2** | Bell       | 400 Hz | 1.2 | -1 dB       | **ON**  | -20 dB    | 1.5:1 |
 | **Band 3** | Bell       | 3 kHz  | 0.8 | +1 dB       | OFF     | —         | —     |
 | **Band 4** | High Shelf | 12 kHz | —   | +1 to +2 dB | OFF     | —         | —     |
-
+:::note[Wideband Compressor:]
 **Wideband Compressor** (at the bottom of TDR Nova):
 
 - **Threshold**: -18 dB
 - **Ratio**: 1.5:1
 - **Attack**: 10 ms
 - **Release**: 100 ms
+:::
     
 :::warning[What This Does :]
 - Gentle wideband compression glues the mix
 - Dynamic cut at 400 Hz prevents "muddy build-up" during loud choruses
 - Subtle high-shelf adds "mastering polish"
+:::
 
 :::tip[**Recommended Signal Chain per Track**]
 For each stem, process in this order:
@@ -543,6 +548,7 @@ For each stem, process in this order:
 
 :::note[Why this order?]
 Compress first to even out levels so TDR Nova's dynamic thresholds work consistently. Then place in the stereo field last so reverb and spatial effects don't get compressed unnaturally.
+:::
 
 ## **Suno-Specific Troubleshooting**
 
@@ -571,7 +577,7 @@ Compress first to even out levels so TDR Nova's dynamic thresholds work consiste
 2. TDR Nova: HP 30Hz, boost 100Hz, cut 400Hz dynamic, boost 3kHz dynamic
 3. Panagement 2: Back center, Width 130%, Concrete reverb, 20% wet
 
-## **TDR Nova Output Gain: The Complete Guide**
+# **TDR Nova Output Gain: The Complete Guide**
 
 ### **Understanding the "Output" Knob**
 
