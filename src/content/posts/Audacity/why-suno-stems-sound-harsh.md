@@ -8,7 +8,7 @@ tags:
   - Audacity
   - Suno
   - Guide
-category: Guides, Audacity
+category: Audacity
 draft: false
 date: 2026-05-03
 ---
