@@ -1,7 +1,15 @@
 ---
 title: Panagement 2 The Ultimate Indie Rock Mixing Guide
 description: A comprehensive guide to using Panagement 2 for mixing audio
-order: 2
+order:
+date: 2026-03-05
+tags:
+  - Guide
+  - Audacity
+draft: false
+updated: 2026-05-03
+category: Guides
+published: 2026-05-03
 ---
 
 # Instrument-by-Instrument Setup Guide
