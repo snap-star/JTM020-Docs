@@ -130,18 +130,18 @@ Quick Reference: Starting Presets
 | Lead Vocal   | 90%   | 20% | Center front    | Wood     |
 | Backing Vox  | 180%  | 35% | Wide back       | Wood     |
 
-import { Aside } from 'astro-pure/user'
-
-<Aside type="tip">
+:::tip
 *Audacity Workflow Tips*
 1. Apply Panagement 2 per track (not on the master) for individual control
 2. Use the "Check Mono" button frequently—indie rock gets played on phones and Bluetooth speakers
 3. Render tracks after setting spatial effects to save CPU (Tracks > Mix > Mix and Render) 
 4. Save presets in Panagement for your "indie template"
-</Aside>
+:::
 
+:::note
 ## Common Mistakes to Avoid
 - Don't widen everything—bass, kick, and lead vocal should stay relatively centered
 - Don't over-reverb—alternative rock needs clarity and punch; washy mixes sound amateur
 - Don't ignore the Tilt control—use it to EQ elements back in the mix (cut highs = further away)
 - Don't place everything at the same depth—use the distance control to create layers
+:::
