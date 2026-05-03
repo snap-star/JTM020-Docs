@@ -445,7 +445,7 @@ Suno vocals often sound slightly muffled or have harsh "AI sibilance." Use TDR N
     
 :::tip
 **Pro Tip**: Set the spectrum analyzer to **"Out"** to see what the EQ is actually doing after dynamic processing.
-:::tip
+:::
 
 ### **2. BASS — "Tight Low-End" Setup** 🎸
 
@@ -529,28 +529,22 @@ Use TDR Nova on your **master track** (after all individual processing) to glue 
 - **Attack**: 10 ms
 - **Release**: 100 ms
     
-
-**What this does**:
-
+:::warning[What This Does :]
 - Gentle wideband compression glues the mix
 - Dynamic cut at 400 Hz prevents "muddy build-up" during loud choruses
 - Subtle high-shelf adds "mastering polish"
 
-:::tip
-## **Recommended Signal Chain per Track**
-
+:::tip[**Recommended Signal Chain per Track**]
 For each stem, process in this order:
-
 1. **Audacity Compressor** — Control dynamics, add punch
 2. **TDR Nova** — Shape tone, fix frequency buildups dynamically
 3. **Panagement 2** — Position in stereo field and add reverb (from previous guide)
-
 :::
 
-**Why this order?** Compress first to even out levels so TDR Nova's dynamic thresholds work consistently. Then place in the stereo field last so reverb and spatial effects don't get compressed unnaturally.
+:::note[Why this order?]
+Compress first to even out levels so TDR Nova's dynamic thresholds work consistently. Then place in the stereo field last so reverb and spatial effects don't get compressed unnaturally.
 
 ## **Suno-Specific Troubleshooting**
-
 
 | Problem                | Cause                             | Solution                                                         |
 | ---------------------- | --------------------------------- | ---------------------------------------------------------------- |
