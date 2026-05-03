@@ -1,57 +1,94 @@
----
-title: JTM020-Docs CMS Dashboard
----
-
-# 📚 JTM020-Docs — Content Dashboard
-
-> Manage your documentation from Obsidian. All posts in `posts/` are listed below.
-
-## 📝 All Documents
-
-```dataview
-TABLE
-  title AS "Title",
-  category AS "Category",
-  tags AS "Tags",
-  published AS "Published",
-  draft AS "Draft?"
-FROM "posts"
-SORT published DESC
-```
-
-## 🚧 Drafts (Not Yet Published)
-
-```dataview
-TABLE
-  title AS "Title",
-  category AS "Category",
-  published AS "Date"
-FROM "posts"
-WHERE draft = true
-SORT published DESC
-```
-
-## ✅ Published
-
-```dataview
-TABLE
-  title AS "Title",
-  category AS "Category",
-  published AS "Published"
-FROM "posts"
-WHERE draft != true
-SORT published DESC
-```
-
----
-
-### Quick Actions
-
-- **New doc:** `Ctrl+Shift+N` or Command Palette → `Vault CMS: New post`
-- **Open this dashboard:** `Ctrl+Shift+H`
-- **Git sync:** Command Palette → `Obsidian Git: Commit and push`
-- **Preview site:** Run `pnpm dev` in your terminal from the project root
-
----
-
-*Powered by [VaultCMS](https://vaultcms.org) + [Obsidian](https://obsidian.md) + [Astro Fuwari](https://github.com/saicaca/fuwari)*
+filters:
+  and:
+    - file.ext == "md"
+formulas:
+  Slug: |-
+    if(file.folder == "posts", "/posts/" + file.name.replace(".md", ""), 
+      if(file.folder == "pages", "/" + file.name.replace(".md", ""), 
+        if(file.folder == "special", if(file.name.replace(".md", "") == "home", "/", "/" + file.name.replace(".md", "")), 
+          if(file.folder == "projects", "/projects/" + file.name.replace(".md", ""), 
+            if(file.folder == "docs", "/docs/" + file.name.replace(".md", ""), 
+              "/" + file.folder)))))
+  Content Folder: |-
+    if(file.name == "index",
+      if(file.folder != "",
+        if(file.folder.replace("/" + file.folder.replace(/.*\//, ""), "") != "",
+          file.folder.replace("/" + file.folder.replace(/.*\//, ""), ""),
+          file.folder
+        ),
+        "root"
+      ),
+      if(file.folder != "",
+        file.folder,
+        "root"
+      )
+    )
+properties:
+  file.fullname:
+    displayName: Full File Name
+  file.name:
+    displayName: File Name
+  formula.Slug:
+    displayName: Path
+  note.date:
+    displayName: Date
+  note.draft:
+    displayName: Draft
+  note.pubDate:
+    displayName: Date
+  note.title:
+    displayName: Title
+views:
+  - type: cms
+    name: Vault CMS Guide
+    filters:
+      and:
+        - file.folder == "/"
+        - file.name.endsWith("GUIDE")
+    order: []
+    sort:
+      - property: file.ctime
+        direction: DESC
+    fallbackToEmbeds: never
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    imageFormat: none
+    showDate: false
+    showDraftStatus: false
+    propertyLabels: above
+    titleProperty: note.title
+    propertyLayout12SideBySide: false
+    propertyLayout34SideBySide: false
+    showTags: false
+    customizeNewButton: false
+    newNoteLocation: ""
+    cardSize: 250
+    imageAspectRatio: 0.55
+    maxTagsToShow: 2
+    dateIncludeTime: false
+    descriptionProperty: note.description
+    hideQuickEditIcon: true
+  - type: cms
+    name: Home
+    filters:
+      and:
+        - file.inFolder("posts")
+    cardSize: 260
+    image: note.title
+    imageAspectRatio: 0.5
+    titleProperty: note.title
+    titlePropertyHasNested: false
+    showDate: true
+    dateProperty: file.mtime
+    dateIncludeTime: true
+    showDraftStatus: true
+    draftStatusProperty: note.draft
+    descriptionProperty: file.name
+    showTags: true
+    tagsProperty: note.tags
+    customizeNewButton: true
+    newNoteLocation: /posts/
+    truncatePreviewProperty: true
+    imageProperty: note.image
+    maxTagsToShow: 2
+    propertyLabels: hide

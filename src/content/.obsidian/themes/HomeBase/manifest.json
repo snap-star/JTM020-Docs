@@ -1,0 +1,8 @@
+{
+  "name": "Home.base",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "author": "Home.base Theme",
+  "authorUrl": "",
+  "description": "A soft pastel CMS theme for Obsidian — designed for Astro.js content writers. Supports light and dark mode."
+}

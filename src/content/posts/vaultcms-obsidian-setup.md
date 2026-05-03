@@ -2,8 +2,12 @@
 title: Setting Up VaultCMS with Obsidian
 published: 2025-01-02
 description: Complete guide for configuring VaultCMS and Obsidian to manage content on JTM020-Docs.
-image: ""
-tags: [VaultCMS, Obsidian, CMS, Setup]
+image: attachments/obsidian-home-cms.png
+tags:
+  - VaultCMS
+  - Obsidian
+  - CMS
+  - Setup
 category: Setup
 draft: false
 ---

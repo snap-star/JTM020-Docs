@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Welcome to Vault CMS
 
 ## Run the setup wizard

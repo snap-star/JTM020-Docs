@@ -1,0 +1,679 @@
+/* ============================================================
+   Home.base — Obsidian Theme
+   A soft pastel CMS theme for Astro.js content writers
+   Supports light & dark mode
+   ============================================================ */
+
+/* ── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ══════════════════════════════════════════════════════════
+   LIGHT MODE — pastel palette
+   ══════════════════════════════════════════════════════════ */
+.theme-light {
+  /* ── Brand Pastels ──────────────────────────────────────── */
+  --hb-rose:        #f4c5d0;
+  --hb-rose-mid:    #e89fb0;
+  --hb-rose-deep:   #c96b84;
+
+  --hb-lavender:    #d8cff5;
+  --hb-lavender-mid:#b8aae8;
+  --hb-lavender-deep:#7c6dc4;
+
+  --hb-sky:         #c5ddf4;
+  --hb-sky-mid:     #9fc3e8;
+  --hb-sky-deep:    #4d8bbf;
+
+  --hb-mint:        #c5edd8;
+  --hb-mint-mid:    #8fd4b0;
+  --hb-mint-deep:   #3d9e70;
+
+  --hb-peach:       #fce0c5;
+  --hb-peach-mid:   #f5c19a;
+  --hb-peach-deep:  #d98248;
+
+  --hb-cream:       #fdf8f0;
+  --hb-paper:       #f9f4eb;
+  --hb-canvas:      #f3ece0;
+
+  /* ── Obsidian Variable Overrides ────────────────────────── */
+  --color-base-00:  #fdf8f0;   /* app bg */
+  --color-base-10:  #f5efe3;   /* sidebar bg */
+  --color-base-20:  #ede5d6;   /* hover bg */
+  --color-base-25:  #e3d9c8;   /* border */
+  --color-base-30:  #d5c9b5;   /* dividers */
+  --color-base-35:  #c0b39e;
+  --color-base-40:  #a89b85;
+  --color-base-50:  #8a7d68;   /* muted text */
+  --color-base-60:  #6b5f4c;
+  --color-base-70:  #4a3f30;
+  --color-base-100: #2c2318;   /* primary text */
+
+  --color-accent-1: var(--hb-lavender-deep);
+  --color-accent-2: var(--hb-rose-deep);
+
+  --background-primary:          var(--hb-cream);
+  --background-primary-alt:      var(--hb-paper);
+  --background-secondary:        var(--hb-canvas);
+  --background-secondary-alt:    #ede5d6;
+  --background-modifier-border:  #ddd4c0;
+  --background-modifier-hover:   rgba(216,207,245,0.35);
+  --background-modifier-active-hover: rgba(216,207,245,0.55);
+  --background-modifier-error:   #fde8e8;
+  --background-modifier-success: #e0f5ea;
+
+  --text-normal:    #2c2318;
+  --text-muted:     #7a6e5c;
+  --text-faint:     #a89b85;
+  --text-accent:    var(--hb-lavender-deep);
+  --text-accent-hover: var(--hb-rose-deep);
+  --text-on-accent: #ffffff;
+
+  --interactive-normal:   var(--hb-paper);
+  --interactive-hover:    var(--hb-lavender);
+  --interactive-accent:   var(--hb-lavender-deep);
+  --interactive-accent-hover: var(--hb-lavender-mid);
+
+  --tag-background:          var(--hb-lavender);
+  --tag-background-hover:    var(--hb-lavender-mid);
+  --tag-color:               var(--hb-lavender-deep);
+  --tag-color-hover:         #fff;
+  --tag-border-color:        var(--hb-lavender-mid);
+
+  --code-background:    #f0eaff;
+  --code-normal:        var(--hb-lavender-deep);
+  --code-comment:       var(--hb-rose-deep);
+  --code-keyword:       var(--hb-lavender-deep);
+  --code-string:        var(--hb-mint-deep);
+  --code-variable:      var(--hb-peach-deep);
+  --code-function:      var(--hb-sky-deep);
+
+  --link-color:            var(--hb-lavender-deep);
+  --link-color-hover:      var(--hb-rose-deep);
+  --link-external-color:   var(--hb-sky-deep);
+  --link-unresolved-color: var(--hb-peach-deep);
+
+  --blockquote-border-color: var(--hb-rose-mid);
+  --blockquote-background-color: rgba(244,197,208,0.2);
+
+  --callout-default:    var(--hb-lavender-deep);
+  --callout-info:       var(--hb-sky-deep);
+  --callout-success:    var(--hb-mint-deep);
+  --callout-warning:    var(--hb-peach-deep);
+  --callout-error:      var(--hb-rose-deep);
+
+  --checkbox-color:          var(--hb-mint-deep);
+  --checkbox-color-hover:    var(--hb-mint-mid);
+  --checkbox-border-color:   var(--hb-mint-mid);
+  --checkbox-marker-color:   #fff;
+
+  --table-header-background: var(--hb-lavender);
+  --table-row-alt-background: rgba(216,207,245,0.15);
+  --table-border-color:      var(--hb-lavender-mid);
+
+  --graph-node:          var(--hb-lavender-deep);
+  --graph-node-focused:  var(--hb-rose-deep);
+  --graph-node-tag:      var(--hb-mint-deep);
+  --graph-node-attachment: var(--hb-peach-deep);
+  --graph-node-unresolved: var(--hb-peach-mid);
+  --graph-line:          var(--hb-lavender-mid);
+
+  --ribbon-background:   var(--hb-canvas);
+  --ribbon-background-collapsed: var(--hb-paper);
+  --titlebar-background: var(--hb-cream);
+  --titlebar-background-focused: var(--hb-paper);
+
+  --status-bar-background: var(--hb-canvas);
+
+  --scrollbar-thumb-bg: rgba(184,170,232,0.5);
+  --scrollbar-active-thumb-bg: rgba(184,170,232,0.8);
+}
+
+/* ══════════════════════════════════════════════════════════
+   DARK MODE — deep muted pastels on dark velvet
+   ══════════════════════════════════════════════════════════ */
+.theme-dark {
+  --hb-rose:        #7a2f42;
+  --hb-rose-mid:    #a04460;
+  --hb-rose-deep:   #e0839a;
+
+  --hb-lavender:    #3b3260;
+  --hb-lavender-mid:#5c508f;
+  --hb-lavender-deep:#b0a3e8;
+
+  --hb-sky:         #1e3a52;
+  --hb-sky-mid:     #2e5a80;
+  --hb-sky-deep:    #7ab8e8;
+
+  --hb-mint:        #1a3d2e;
+  --hb-mint-mid:    #2d6648;
+  --hb-mint-deep:   #7ecfa2;
+
+  --hb-peach:       #4a2d12;
+  --hb-peach-mid:   #7a4a20;
+  --hb-peach-deep:  #e8a870;
+
+  --color-base-00:  #18151f;
+  --color-base-10:  #1e1a2a;
+  --color-base-20:  #252033;
+  --color-base-25:  #2e283d;
+  --color-base-30:  #3a3350;
+  --color-base-35:  #4a4260;
+  --color-base-40:  #6055808;
+  --color-base-50:  #8880a8;
+  --color-base-60:  #a89ec8;
+  --color-base-70:  #c8c0e0;
+  --color-base-100: #ede8f8;
+
+  --color-accent-1: var(--hb-lavender-deep);
+  --color-accent-2: var(--hb-rose-deep);
+
+  --background-primary:          #18151f;
+  --background-primary-alt:      #1e1a2a;
+  --background-secondary:        #151219;
+  --background-secondary-alt:    #12101a;
+  --background-modifier-border:  #2e283d;
+  --background-modifier-hover:   rgba(91,80,143,0.25);
+  --background-modifier-active-hover: rgba(91,80,143,0.4);
+  --background-modifier-error:   #3d1520;
+  --background-modifier-success: #1a3a28;
+
+  --text-normal:    #e8e2f8;
+  --text-muted:     #9890b8;
+  --text-faint:     #605878;
+  --text-accent:    var(--hb-lavender-deep);
+  --text-accent-hover: var(--hb-rose-deep);
+  --text-on-accent: #18151f;
+
+  --interactive-normal:   #1e1a2a;
+  --interactive-hover:    #2e283d;
+  --interactive-accent:   var(--hb-lavender-deep);
+  --interactive-accent-hover: var(--hb-lavender-mid);
+
+  --tag-background:          rgba(59,50,96,0.7);
+  --tag-background-hover:    var(--hb-lavender-mid);
+  --tag-color:               var(--hb-lavender-deep);
+  --tag-color-hover:         #fff;
+  --tag-border-color:        var(--hb-lavender-mid);
+
+  --code-background:    #1e1a2e;
+  --code-normal:        var(--hb-lavender-deep);
+  --code-comment:       var(--hb-rose-deep);
+  --code-keyword:       var(--hb-lavender-deep);
+  --code-string:        var(--hb-mint-deep);
+  --code-variable:      var(--hb-peach-deep);
+  --code-function:      var(--hb-sky-deep);
+
+  --link-color:            var(--hb-lavender-deep);
+  --link-color-hover:      var(--hb-rose-deep);
+  --link-external-color:   var(--hb-sky-deep);
+  --link-unresolved-color: var(--hb-peach-deep);
+
+  --blockquote-border-color: var(--hb-rose-mid);
+  --blockquote-background-color: rgba(122,47,66,0.2);
+
+  --callout-default:    var(--hb-lavender-deep);
+  --callout-info:       var(--hb-sky-deep);
+  --callout-success:    var(--hb-mint-deep);
+  --callout-warning:    var(--hb-peach-deep);
+  --callout-error:      var(--hb-rose-deep);
+
+  --checkbox-color:          var(--hb-mint-deep);
+  --checkbox-color-hover:    var(--hb-mint-mid);
+  --checkbox-border-color:   var(--hb-mint-mid);
+  --checkbox-marker-color:   #18151f;
+
+  --table-header-background: var(--hb-lavender);
+  --table-row-alt-background: rgba(59,50,96,0.2);
+  --table-border-color:      var(--hb-lavender-mid);
+
+  --graph-node:          var(--hb-lavender-deep);
+  --graph-node-focused:  var(--hb-rose-deep);
+  --graph-node-tag:      var(--hb-mint-deep);
+  --graph-node-attachment: var(--hb-peach-deep);
+  --graph-node-unresolved: var(--hb-peach-mid);
+  --graph-line:          #3a3350;
+
+  --ribbon-background:   #12101a;
+  --ribbon-background-collapsed: #12101a;
+  --titlebar-background: #12101a;
+  --titlebar-background-focused: #18151f;
+
+  --status-bar-background: #12101a;
+
+  --scrollbar-thumb-bg: rgba(91,80,143,0.4);
+  --scrollbar-active-thumb-bg: rgba(91,80,143,0.65);
+}
+
+/* ══════════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ══════════════════════════════════════════════════════════ */
+body {
+  --font-text-theme:     'DM Sans', sans-serif;
+  --font-interface-theme:'DM Sans', sans-serif;
+  --font-monospace-theme:'JetBrains Mono', monospace;
+
+  --font-text-size:      15px;
+  --line-height-normal:  1.75;
+  --font-text-weight:    400;
+
+  --h1-font: 'DM Serif Display', serif;
+  --h2-font: 'DM Serif Display', serif;
+  --h3-font: 'DM Sans', sans-serif;
+  --h4-font: 'DM Sans', sans-serif;
+  --h5-font: 'DM Sans', sans-serif;
+  --h6-font: 'DM Sans', sans-serif;
+
+  --h1-size: 2rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.2rem;
+  --h4-size: 1rem;
+  --h5-size: 0.9rem;
+  --h6-size: 0.85rem;
+
+  --h1-weight: 400;
+  --h2-weight: 400;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  --h1-line-height: 1.25;
+  --h2-line-height: 1.3;
+  --h3-line-height: 1.4;
+
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-accent);
+  --h4-color: var(--text-muted);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-faint);
+
+  /* Borders & Radius */
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 14px;
+  --radius-xl: 20px;
+}
+
+/* ── Heading italic flavour on H1/H2 ───────────────────── */
+.markdown-preview-view h1,
+.cm-header-1 {
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* ══════════════════════════════════════════════════════════
+   LAYOUT CHROME
+   ══════════════════════════════════════════════════════════ */
+
+/* Titlebar */
+.titlebar {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Ribbon (left icon bar) */
+.side-dock-ribbon {
+  border-right: 1px solid var(--background-modifier-border);
+}
+.side-dock-ribbon .side-dock-ribbon-action:hover {
+  background: var(--background-modifier-hover);
+  border-radius: var(--radius-m);
+  color: var(--text-accent);
+}
+
+/* Sidebar */
+.nav-folder-title,
+.nav-file-title {
+  border-radius: var(--radius-m);
+  padding: 3px 8px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background: var(--background-modifier-hover);
+  color: var(--text-accent);
+  font-weight: 500;
+}
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background: var(--background-modifier-hover);
+}
+
+/* ── CMS folder badge: highlight /content/** folders ────── */
+.nav-folder-title[data-path^="content"] {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  font-weight: 500;
+  border-radius: var(--radius-m);
+  margin-bottom: 1px;
+}
+.nav-folder-title[data-path^="content"]::before {
+  content: "✦ ";
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+/* Tab header */
+.workspace-tab-header {
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+.workspace-tab-header.is-active {
+  background: var(--background-primary);
+  border-bottom-color: var(--background-primary);
+  color: var(--text-accent);
+}
+
+/* Status bar */
+.status-bar {
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 11px;
+  font-family: var(--font-monospace-theme);
+}
+
+/* ══════════════════════════════════════════════════════════
+   EDITOR & PREVIEW
+   ══════════════════════════════════════════════════════════ */
+
+/* Comfortable reading width */
+.markdown-preview-view,
+.cm-content {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Inline code */
+code {
+  background: var(--code-background);
+  color: var(--code-normal);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.88em;
+  border-radius: var(--radius-s);
+  padding: 1px 5px;
+}
+
+/* Code blocks */
+pre {
+  background: var(--code-background) !important;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+  overflow: auto;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid var(--blockquote-border-color);
+  background: var(--blockquote-background-color);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  padding: 12px 18px;
+  margin: 1.2em 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Links */
+a.internal-link,
+a.internal-link:hover {
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+/* Tags */
+.tag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 999px;
+  font-size: 0.8em;
+  padding: 1px 9px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+.tag:hover {
+  background: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  text-decoration: none;
+}
+
+/* Horizontal rule */
+.markdown-preview-view hr {
+  border: none;
+  border-top: 2px dashed var(--background-modifier-border);
+  margin: 2em auto;
+  width: 60%;
+  opacity: 0.7;
+}
+
+/* Tables */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+.markdown-preview-view th {
+  background: var(--table-header-background);
+  color: var(--text-normal);
+  font-weight: 600;
+  font-size: 0.88em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border: 1px solid var(--table-border-color);
+  padding: 8px 14px;
+}
+.markdown-preview-view tr:nth-child(even) td {
+  background: var(--table-row-alt-background);
+}
+
+/* Checkboxes */
+input[type=checkbox] {
+  border: 2px solid var(--checkbox-border-color);
+  border-radius: 4px;
+}
+input[type=checkbox]:checked {
+  background: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+
+/* ══════════════════════════════════════════════════════════
+   CALLOUTS — styled per type
+   ══════════════════════════════════════════════════════════ */
+.callout {
+  border-radius: var(--radius-m);
+  border: 1px solid;
+  padding: 14px 18px;
+  margin: 1.2em 0;
+}
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="info"] {
+  border-color: var(--hb-sky-mid);
+  background: rgba(197,221,244,0.15);
+}
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="check"] {
+  border-color: var(--hb-mint-mid);
+  background: rgba(197,237,216,0.15);
+}
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  border-color: var(--hb-peach-mid);
+  background: rgba(252,224,197,0.15);
+}
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+  border-color: var(--hb-rose-mid);
+  background: rgba(244,197,208,0.15);
+}
+.callout[data-callout="cms"] {
+  border-color: var(--hb-lavender-mid);
+  background: rgba(216,207,245,0.15);
+}
+.callout-title {
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FRONTMATTER / PROPERTIES — CMS-style panel
+   ══════════════════════════════════════════════════════════ */
+.metadata-container {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+.metadata-container .metadata-property {
+  border-radius: var(--radius-s);
+  padding: 4px 6px;
+  transition: background 0.12s;
+}
+.metadata-container .metadata-property:hover {
+  background: var(--background-modifier-hover);
+}
+.metadata-property-key {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.82em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: var(--font-monospace-theme);
+}
+.metadata-property-value {
+  color: var(--text-normal);
+}
+/* "draft" value highlight */
+.metadata-property-value[data-value="draft"] {
+  color: var(--hb-peach-deep);
+  font-weight: 600;
+}
+.metadata-property-value[data-value="published"] {
+  color: var(--hb-mint-deep);
+  font-weight: 600;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SEARCH
+   ══════════════════════════════════════════════════════════ */
+.search-result-file-matches {
+  border-left: 3px solid var(--hb-lavender-mid);
+  padding-left: 8px;
+}
+.search-result-file-match-highlight {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border-radius: 3px;
+  padding: 0 3px;
+}
+.search-input-container input {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+}
+.search-input-container input:focus {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(176,163,232,0.25);
+}
+
+/* ══════════════════════════════════════════════════════════
+   MODAL / DIALOGS
+   ══════════════════════════════════════════════════════════ */
+.modal {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.18);
+}
+.modal-title {
+  font-family: var(--h2-font);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--text-normal);
+}
+
+/* Quick switcher */
+.prompt {
+  border-radius: var(--radius-xl);
+}
+.prompt-input {
+  font-size: 15px;
+}
+.suggestion-item.is-selected {
+  background: var(--background-modifier-hover);
+  border-radius: var(--radius-m);
+  color: var(--text-accent);
+}
+
+/* ══════════════════════════════════════════════════════════
+   GRAPH VIEW
+   ══════════════════════════════════════════════════════════ */
+.graph-view.color-fill { color: var(--graph-node); }
+.graph-view.color-fill-focused { color: var(--graph-node-focused); }
+.graph-view.color-fill-tag { color: var(--graph-node-tag); }
+.graph-view.color-fill-attachment { color: var(--graph-node-attachment); }
+.graph-view.color-fill-unresolved { color: var(--graph-node-unresolved); }
+.graph-view.color-arrow { color: var(--graph-line); }
+.graph-view.color-line { color: var(--graph-line); }
+.graph-view.color-text { color: var(--text-muted); }
+
+/* ══════════════════════════════════════════════════════════
+   SCROLLBARS
+   ══════════════════════════════════════════════════════════ */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* ══════════════════════════════════════════════════════════
+   SELECTION & HIGHLIGHTS
+   ══════════════════════════════════════════════════════════ */
+::selection {
+  background: rgba(216,207,245,0.45);
+}
+.theme-dark ::selection {
+  background: rgba(91,80,143,0.45);
+}
+.cm-s-obsidian .cm-highlight,
+mark {
+  background: rgba(244,197,208,0.45);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ASTRO CMS — CONTENT/ FOLDER BADGES IN FILE TREE
+   Files under /content/** get subtle frontmatter type hints
+   ══════════════════════════════════════════════════════════ */
+.nav-file-title[data-path*="/content/blog/"]::after    { content: " ·blog";    color: var(--hb-rose-deep);    font-size: 10px; opacity: 0.75; }
+.nav-file-title[data-path*="/content/docs/"]::after    { content: " ·docs";    color: var(--hb-sky-deep);     font-size: 10px; opacity: 0.75; }
+.nav-file-title[data-path*="/content/pages/"]::after   { content: " ·page";    color: var(--hb-mint-deep);    font-size: 10px; opacity: 0.75; }
+.nav-file-title[data-path*="/content/projects/"]::after{ content: " ·project"; color: var(--hb-peach-deep);   font-size: 10px; opacity: 0.75; }
+.nav-file-title[data-path*="/content/tags/"]::after    { content: " ·tag";     color: var(--hb-lavender-deep);font-size: 10px; opacity: 0.75; }
+
+/* ══════════════════════════════════════════════════════════
+   PRINT
+   ══════════════════════════════════════════════════════════ */
+@media print {
+  .sidebar, .ribbon, .status-bar, .titlebar { display: none; }
+  .workspace { background: white; color: black; }
+}
