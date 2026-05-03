@@ -108,6 +108,19 @@ draft: false       # Set true to hide from production
 > Critical information here.
 ```
 
+> [!note]
+> This is a note callout.
+
+> [!tip]
+> A helpful tip for readers.
+
+> [!warning]
+> Watch out for this!
+
+> [!important]
+> Critical information here.
+
+
 ## Publishing Workflow
 
 1. Write or edit content in Obsidian
