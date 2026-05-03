@@ -2,13 +2,13 @@
 title: Why Suno Stems Sound Harsh
 updated: 2026-05-03
 published: 2026-05-03
-description: Suno v4 specifically tends to produce piercing highs (8–12 kHz) and AI artifacts (3–5 kHz)
+description: Suno v4 specifically tends to produce piercing high and artifacts
 image: ""
 tags:
   - Audacity
   - Suno
   - Guide
-category: Guides
+category: Guides, Audacity
 draft: false
 date: 2026-05-03
 ---

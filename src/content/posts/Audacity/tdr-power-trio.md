@@ -1,14 +1,14 @@
 ---
 title: The complete TDR "power trio" for mixing
 updated: 2026-05-03
-published: ""
+published: 2026-05-03
 description: Here's how Kotelnikov and SlickEQ differ from Nova
 image: ""
 tags:
   - Audacity
   - Guide
   - TDR
-category: Guides
+category: Guides, Audacity
 draft: false
 date: 2026-05-03
 ---

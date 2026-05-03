@@ -8,7 +8,7 @@ tags:
   - Audacity
 draft: false
 updated: 2026-05-03
-category: Guides
+category: Guides, Audacity
 published: 2026-05-03
 ---
 
