@@ -85,7 +85,7 @@ Wide, atmospheric, shimmering indie tone
 | **FX Bin**     | **TDR Nova**                           | Dynamic cut -3dB @ 3kHz (tames Suno harshness)                     | Harshness control             |
 | **FX Bin**     | **TDR SlickEQ**                        | British mode, Low +2dB @ 120Hz, High +3dB @ 6kHz, Silky saturation | Indie rock shimmer            |
 | **FX Bin**     | **Panagement 2**                       | Width 150-200%, Cave/Heaven reverb, 25% wet                        | Spatial width                 |
-:::tip[Cakewalk Tip:
+:::tip[Cakewalk Tip:]
 Use **FX Chain** to create a macro: one knob controls both SlickEQ high shelf and Panagement width for automated "chorus expansion" [tapeop.com](https://tapeop.com/reviews/gear/92/sonar-x2-producer).
 :::
 
