@@ -2,7 +2,6 @@
   "seo",
   "property-over-file-name",
   "oxygen-settings",
-  "vault-cms",
   "astro-composer",
   "settings-search",
   "editing-toolbar",
@@ -18,5 +17,10 @@
   "omnisearch",
   "data-files-editor",
   "file-name-history",
-  "nested-properties"
+  "nested-properties",
+  "advanced-canvas",
+  "table-editor-obsidian",
+  "disable-tabs",
+  "iconic",
+  "obsidian-kanban"
 ]
