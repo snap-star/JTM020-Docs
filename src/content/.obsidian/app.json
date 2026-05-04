@@ -1,7 +1,7 @@
 {
   "showInlineTitle": false,
   "promptDelete": true,
-  "showIndentGuide": false,
+  "showIndentGuide": true,
   "attachmentFolderPath": "./attachments",
   "userIgnoreFilters": [
     "dist",
@@ -43,5 +43,8 @@
   "mobileQuickRibbonItem": "",
   "vimMode": false,
   "readableLineLength": true,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "showLineNumber": true,
+  "tabSize": 4
 }
