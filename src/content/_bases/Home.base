@@ -92,3 +92,5 @@ views:
     imageProperty: note.image
     maxTagsToShow: 2
     propertyLabels: hide
+  - type: cards
+    name: Folder
