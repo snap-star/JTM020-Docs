@@ -8,6 +8,7 @@ tags:
   - Example
 category: Examples
 draft: false
+date:
 ---
 - [ ] Checklist 
 - [x] done checklist
