@@ -36,13 +36,13 @@
   "duplicateThreshold": 80,
   "cachedGlobalResults": [
     {
-      "file": "_vault-cms-guide.md",
-      "displayName": "Vault CMS Guide",
+      "file": "posts/a-test.md",
+      "displayName": "A mobile test post",
       "checks": {
         "titleLength": [
           {
             "passed": false,
-            "message": "Title too short: 15 characters",
+            "message": "Title too short: 18 characters",
             "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
@@ -50,7 +50,115 @@
         "metaDescription": [
           {
             "passed": false,
-            "message": "Description too short: 62 characters",
+            "message": "Description too short: 11 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 18 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 0.6 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Cakewalk/mastering-with-trio-tdr.md",
+      "displayName": "Mastering with Trio TDR",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 23 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 39 characters",
             "suggestion": "Aim for 120-160 characters",
             "severity": "warning"
           }
@@ -79,7 +187,7 @@
         "contentLength": [
           {
             "passed": true,
-            "message": "Good content length: 2436 words",
+            "message": "Good content length: 2736 words",
             "severity": "info"
           }
         ],
@@ -125,24 +233,1655 @@
         "externalBrokenLinks": [
           {
             "passed": true,
-            "message": "Found 9 external link(s), all appear to resolve and are working",
+            "message": "No external links found",
             "severity": "info"
           }
         ],
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: 8.9 (Easy to read)",
+            "message": "Good reading level: 4.5 (Very easy to read)",
             "severity": "info"
           }
         ]
       },
-      "overallScore": 73.5,
+      "overallScore": 70,
+      "issuesCount": 0,
+      "warningsCount": 3,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Cakewalk/cakewalk-guide.md",
+      "displayName": "Cakewalk Guide",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 14 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 45 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"**The TDR Trio + Cakewalk Stock Plugin Chains**\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 36,
+              "searchText": "# **The TDR Trio + Cakewalk Stock Plugin Chains**",
+              "context": ":::\n\n# **The TDR Trio + Cakewalk Stock Plugin Chains**\n\n## **1. DRUMS**"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**Bus Routing in Cakewalk**\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 145,
+              "searchText": "# **Bus Routing in Cakewalk**",
+              "context": "| **Send Bus**   | **REmatrix Solo** (Cakewalk stock) | Short room IR, 15% wet                          | Natural space          |\n\n# **Bus Routing in Cakewalk**\nCreate **three aux buses** for a professional workflow:\n"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**Cakewalk-Specific Power Moves**\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 181,
+              "searchText": "# **Cakewalk-Specific Power Moves**",
+              "context": ":::\n\n# **Cakewalk-Specific Power Moves**\n\n## **1. ProChannel Console Emulation on Every Track**"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**Final Export Settings**\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 239,
+              "searchText": "# **Final Export Settings**",
+              "context": "\n:::note[Final Export Settings]\n# **Final Export Settings**\n\n1. **File > Export > Audio**"
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1808 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 4 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 10.9 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 55,
+      "issuesCount": 0,
+      "warningsCount": 7,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/vaultcms-obsidian-setup.md",
+      "displayName": "Setting Up VaultCMS with Obsidian",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 33 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 86 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 302 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 3 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 5.7 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 78,
+      "issuesCount": 0,
+      "warningsCount": 2,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/markdown.md",
+      "displayName": "Markdown Example",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 16 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 41 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 502 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": false,
+            "message": "External link unreachable: http://foo.bar",
+            "suggestion": "Check if the URL is correct or if the server is down.",
+            "severity": "warning",
+            "position": {
+              "line": 97,
+              "searchText": "http://foo.bar",
+              "context": "that last line which continues item 3 above).\n\nHere's a link to [a website](http://foo.bar), to a [local\ndoc](local-doc.html), and to a [section heading in the current\ndoc](#an-h2-header). Here's a footnote [^1]."
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 4.5 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 70,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/markdown-extended.md",
+      "displayName": "Markdown Extended Features",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 26 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 43 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 160 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 1 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 9.0 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/guide/index.md",
+      "displayName": "Simple Guides for Fuwari",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 24 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 30 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 172 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 4 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 3.9 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/getting-started.md",
+      "displayName": "Getting Started with JTM020-Docs",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 32 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 72 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 178 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 10.6 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 68,
+      "issuesCount": 0,
+      "warningsCount": 3,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/first-post-using-obsidian.md",
+      "displayName": "First Post using Obsidian",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 25 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 33 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 4 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 12.5 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 50,
+      "issuesCount": 0,
+      "warningsCount": 5,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/expressive-code.md",
+      "displayName": "Expressive Code Example",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 23 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 55 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 180 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 7 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 15.0 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 50,
+      "issuesCount": 0,
+      "warningsCount": 5,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Audacity/why-suno-stems-sound-harsh.md",
+      "displayName": "Why Suno Stems Sound Harsh",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 26 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 65 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1051 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": false,
+            "message": "External link access restricted (403): https://gearspace.com/board/audio-student-engineering-production-question-zone/1275968-how-do-you-supress-harshness-synth-track.html",
+            "suggestion": "This link returned a 403 Forbidden error. This may indicate bot protection rather than a broken link.",
+            "severity": "warning",
+            "position": {
+              "line": 46,
+              "searchText": "https://gearspace.com/board/audio-student-engineering-production-question-zone/1275968-how-do-you-supress-harshness-synth-track.html",
+              "context": "| **Band 3** | High Shelf | 10 kHz          | —   | -2 dB       | **ON**  | -26 dB    | 2 ms   | 100 ms  |\n\n**The \"Hunt\" Method**: If you don't know the exact frequency, boost a narrow band (+10 dB, Q=4.0) and sweep slowly until the harshness screams at you. That's your target frequency. Now switch to **cut** and turn on **Dynamic** [gearspace.com](https://gearspace.com/board/audio-student-engineering-production-question-zone/1275968-how-do-you-supress-harshness-synth-track.html).\n\n## **Method 2: Free De-Esser Plugins for Audacity**"
+            }
+          },
+          {
+            "passed": true,
+            "message": "5 of 6 external link(s) are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 6.4 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 70,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Audacity/tdr-power-trio.md",
+      "displayName": "The complete TDR \"power trio\" for mixing",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 40 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 50 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1348 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": false,
+            "message": "External link access restricted (403): https://gearspace.com/board/music-computers/1215143-tokyo-dawns-tdr-nova-eq-vs-slick-eq.html",
+            "suggestion": "This link returned a 403 Forbidden error. This may indicate bot protection rather than a broken link.",
+            "severity": "warning",
+            "position": {
+              "line": 23,
+              "searchText": "https://gearspace.com/board/music-computers/1215143-tokyo-dawns-tdr-nova-eq-vs-slick-eq.html",
+              "context": "| **TDR VOS SlickEQ** | Static EQ + Saturation | Tone shaping, adding color/air, analog vibe   | Musical, warm, adds harmonic mojo         |\n\n**The golden rule**: Nova _fixes_ problems. Kotelnikov _controls_ dynamics. SlickEQ _colors_ and _shapes_ tone [gearspace.com](https://gearspace.com/board/music-computers/1215143-tokyo-dawns-tdr-nova-eq-vs-slick-eq.html).\n\n## **1. TDR Kotelnikov — The Transparent Glue** "
+            }
+          },
+          {
+            "passed": true,
+            "message": "1 of 2 external link(s) are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 10.4 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 78,
+      "issuesCount": 0,
+      "warningsCount": 3,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Audacity/panagement-2.md",
+      "displayName": "Panagement 2 The Ultimate Indie Rock Mixing Guide",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 49 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 60 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"Advanced Immersive Techniques\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 118,
+              "searchText": "# Advanced Immersive Techniques",
+              "context": "- *Vocal* for warmth and presence\n\n# Advanced Immersive Techniques\n## 1. The \"3D Stage\" Method\n"
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1291 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 12.0 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 53,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Audacity/equalizer-compressor.md",
+      "displayName": "Audacity Equalizer & Compressor",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 31 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 34 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"**TDR NOVA — THE SURGICAL TOOL**\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 132,
+              "searchText": "# **TDR NOVA — THE SURGICAL TOOL**",
+              "context": "| **Release**   | 40-80 ms      |\n\n# **TDR NOVA — THE SURGICAL TOOL**\nTDR Nova is a **parallel dynamic equalizer** [TDR Nova](https://www.tokyodawn.net/tdr-nova/music/). This means it can act as:\n"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**AUDACITY COMPRESSOR: Stem-by-Stem Settings**\" (H1) appears after H3",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 300,
+              "searchText": "# **AUDACITY COMPRESSOR: Stem-by-Stem Settings**",
+              "context": "\n\n# **AUDACITY COMPRESSOR: Stem-by-Stem Settings**\n\nAudacity's compressor is a straightforward **downward compressor**—it reduces peaks so you can turn everything up. The key is using different **attack/release times** for each instrument to shape the transients[audacity manual](https://manual.audacityteam.org/man/compressor.html)"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**1. DRUMS**\" (H3) skips heading level(s) after H1",
+            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
+            "severity": "warning",
+            "position": {
+              "line": 304,
+              "searchText": "### **1. DRUMS**",
+              "context": "Audacity's compressor is a straightforward **downward compressor**—it reduces peaks so you can turn everything up. The key is using different **attack/release times** for each instrument to shape the transients[audacity manual](https://manual.audacityteam.org/man/compressor.html)\n\n### **1. DRUMS**\n\n**Goal**: Punchy, controlled, but not lifeless"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**TDR NOVA: Dynamic EQ Strategies**\" (H1) appears after H3",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 418,
+              "searchText": "# **TDR NOVA: Dynamic EQ Strategies**",
+              "context": "\n\n# **TDR NOVA: Dynamic EQ Strategies**\n\nTDR Nova is a **parallel dynamic equalizer**—it can act as a standard EQ, dynamic EQ, multiband compressor, or wideband compressor. For Suno stems, we'll use it to fix AI artifacts and add polish."
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**TDR Nova Output Gain: The Complete Guide**\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 580,
+              "searchText": "# **TDR Nova Output Gain: The Complete Guide**",
+              "context": "3. Panagement 2: Back center, Width 130%, Concrete reverb, 20% wet\n\n# **TDR Nova Output Gain: The Complete Guide**\n\n### **Understanding the \"Output\" Knob**"
+            }
+          },
+          {
+            "passed": false,
+            "message": "\"**Understanding the \"Output\" Knob**\" (H3) skips heading level(s) after H1",
+            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
+            "severity": "warning",
+            "position": {
+              "line": 582,
+              "searchText": "### **Understanding the \"Output\" Knob**",
+              "context": "# **TDR Nova Output Gain: The Complete Guide**\n\n### **Understanding the \"Output\" Knob**\n\nTDR Nova's **Output** control (at the bottom right of the interface) serves two purposes:"
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 5843 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 4 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 8.7 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 63,
+      "issuesCount": 0,
+      "warningsCount": 8,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/astro-composer.md",
+      "displayName": "Astro Composer",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 14 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 53 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 2 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 14.7 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 50,
+      "issuesCount": 0,
+      "warningsCount": 5,
+      "noticesCount": 0
+    },
+    {
+      "file": "spec/about.md",
+      "displayName": "spec/about.md",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 5 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "No properties found",
+            "suggestion": "Add properties with description property",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 9 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 8.2 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
       "issuesCount": 0,
       "warningsCount": 3,
       "noticesCount": 0
     }
   ],
-  "lastScanTimestamp": 1767334975072,
+  "lastScanTimestamp": 1778631088718,
   "showNotices": true
 }

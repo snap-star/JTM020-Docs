@@ -3,12 +3,14 @@ title: A mobile test post
 updated: 2026-05-13
 published: 2026-05-13
 description: A Test Post
-image: posts/attachments/a-mobile-cms.jpg
+image: |-
+  /attachments/a-mobil
+  e-cms.jpg
 tags:
   - Example
 category: Examples
 draft: false
-date:
+date: 2026-05-13
 ---
 - [ ] Checklist 
 - [x] done checklist
