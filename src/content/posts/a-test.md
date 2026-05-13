@@ -4,7 +4,7 @@ updated: 2026-05-13
 published: 2026-05-13
 description: A Test Post
 image: |-
-  /attachments/a-mobil
+  posts/attachments/a-mobil
   e-cms.jpg
 tags:
   - Example
